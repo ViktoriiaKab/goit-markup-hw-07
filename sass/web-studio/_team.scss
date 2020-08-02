@@ -1,0 +1,80 @@
+.team{
+    padding: 94px 0;
+    background-color: #F5F4FA;
+}
+
+.team--width{
+    @extend %container;
+}
+
+.team__title{
+    @include title($text-color);
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.personal{
+    display: flex;
+    text-align: center;
+}
+
+.worker{
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.worker:not(:last-child){
+    margin-right: 30px;
+}
+
+.worker__photo{
+    margin-bottom: 30px;
+}
+
+.worker__name{
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: $text-color;
+    
+}
+
+.worker__text{
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: $primary-color;
+}
+
+.ss-list{
+    display: flex;
+    width: 205px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.ss-list__element:not(:last-child){
+    margin-right: 10px;
+}
+
+.ss-link{
+    @extend %flexCenter;
+    transition: all 250ms $timing-function;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: $svg-color;
+}
+
+.ss-link:hover,
+.ss-link:focus{
+    fill: $primary-white-color;
+    background-color: $accent-color;
+}

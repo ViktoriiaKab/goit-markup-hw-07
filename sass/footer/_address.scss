@@ -1,0 +1,44 @@
+address{
+    font-style: normal;
+    margin-right: 70px;
+}
+
+.adress__name-company{
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 28px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.name-company--white{
+    color: $primary-white-color;
+    margin-left: 5px;
+}
+
+.adress__text{
+    display: inline-block;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $primary-white-color;
+}
+
+.adress__link{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+}
+
+.adress__link:not(:last-child){
+    margin-bottom: 9px;
+}

@@ -1,0 +1,60 @@
+.flex-div{
+    @extend %flexCenter;
+}
+
+.nav{
+    @extend %flexCenter;
+    margin-left: 85px;
+}
+
+.nav__name-company{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    
+    color: $black-color;
+}
+
+.name-company--blue{
+    color: $accent-color;
+}
+
+.nav__link{
+    display: inline-block;
+    padding: 20px 0;
+    transition: color 250ms $timing-function; 
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $text-color;
+    position: relative;
+
+    text-decoration: none;
+}
+
+.nav__link:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav__link:focus,
+.nav__link:hover{
+    color: $accent-color;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 5px;
+    border-radius: 2px;
+    background-color: $accent-color;
+}

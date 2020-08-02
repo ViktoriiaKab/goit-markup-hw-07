@@ -1,0 +1,36 @@
+.clients{
+    @extend %container;
+    margin-top: 95px;
+    margin-bottom: 95px;
+}
+
+.clients__title{
+    @include title($text-color);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.clients-list{
+    display: flex;
+}
+
+.clients-list__link{
+    @extend %flexCenter;
+    transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid $svg-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    fill: $svg-color;
+}
+
+.clients-list__element:not(:last-child){
+    margin-right: 30px;
+}
+
+.clients-list__link:hover,
+.clients-list__link:focus{
+    transform: scale(1.1);
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+}

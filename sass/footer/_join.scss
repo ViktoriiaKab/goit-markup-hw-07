@@ -1,0 +1,23 @@
+.join{
+    margin-right: 100px;
+    margin-top: 8px;
+}
+
+.join__title{
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+}
+
+.ss-link{
+    display: flex;
+}
+
+.ss-link__ss{
+    width: 20px;
+    height: 20px;
+}

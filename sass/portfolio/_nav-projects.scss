@@ -1,0 +1,34 @@
+.our-projects{
+    @extend %container;
+    padding-top: 94px;
+    margin-bottom: 95px;
+}
+
+.list-nav{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.list-nav__link{
+    transition: all 250ms $timing-function;
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    background-color: #F5F4FA;
+    color: $text-color;
+}
+.list-nav__element:not(:last-child){
+    margin-right: 8px;
+}
+
+.list-nav__element:focus .list-nav__link,
+.list-nav__element:hover .list-nav__link{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    background-color: $accent-color;
+    color: $primary-white-color;
+}
